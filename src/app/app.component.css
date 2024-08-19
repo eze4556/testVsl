@@ -1,0 +1,89 @@
+section{
+  padding: 50px 0;
+}
+
+h1, h2{
+  background: #5F9BE8;
+background: linear-gradient(to right, #5F9BE8 0%, #B968E8 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.adonis-column {
+  background-color: #DDDEE0; /* color de fondo para destacar */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5), 0 8px 16px rgba(255, 255, 255, 0.3); /* efecto de sombra blanca */
+  color: black;
+  position: relative; /* para que z-index funcione */
+}
+
+.video-container {
+  background: linear-gradient(to right, #5F9BE8 0%, #B968E8 100%);
+  width: 83%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.video-border {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Relación de aspecto 16:9 */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
